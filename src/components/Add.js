@@ -22,6 +22,7 @@ export default function Add({ onAdd }) {
         type="submit"
         className="btn btn-info ms-2"
         style={{ marginTop: "-34px" }}
+        disabled={task.trim() === ""}
         onClick={() => {
           onAdd({
             id: uuid(),
